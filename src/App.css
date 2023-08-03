@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.App{
+    /* background: #5085e7; */
+    /* background: #070722; */
+    /* background: #252588; */
+    /* background: #8787ea; */
+    /* background: #08081c; */
+    background: #5e461926;
+}
