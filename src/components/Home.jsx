@@ -3,6 +3,7 @@ import { Avatar, Box, Flex, IconButton, Image, Text,Button } from '@chakra-ui/re
 import { RiArrowGoForwardFill, RiArrowRightFill, RiMenu3Fill } from 'react-icons/ri';
 import Navigation from './Navigation';
 import MaxWrapper from './MaxWrapper';
+import {Link} from 'react-router-dom';
 
 export default function Home(){
     const [ text, setText ] =useState('Where you get all that is necessary for your business?');
@@ -19,12 +20,14 @@ export default function Home(){
             <Flex justify='center' align='center' flexDir='column' h='100%' w='100%' pos='relative' bg={'rgba(0,0,0,0.4)'} top='0'>
                 <Flex align='center' justify='center' w='100%' maxW='1100px' flexDir='column' p='60px 0' gap='45px'>
                     <Flex flexDir='column' maxW='750px' align='center'>
-                        <Text as={'h1'} fontSize={{sm:'6xl',base:'40px'}} fontWeight={'bold'} textAlign='center' color={'white'} w='100%' h='100%' p={{sm:'0',base:'0 20px'}}>Create your own portfolio without stress</Text>
-                        <Text fontSize={{sm:'23px',base:'17px'}} maxW='550px' p='0 10px' textAlign='center'>HoistMe is a simple, friendly and easy to use platform to create you own portfolio for your business</Text>
+                        <Text as={'h1'} fontSize={{lg:'6xl', sm:'5xl',base:'40px'}} fontWeight={'bold'} textAlign='center' color={'white'} w='100%' h='100%' p={{sm:'0',base:'0 20px'}}>Create your own portfolio without stress</Text>
+                        <Text fontSize={{sm:'20px',base:'17px'}} maxW='550px' p='0 10px' textAlign='center'>HoistMe is a simple, friendly and easy to use platform to create you own portfolio for your business</Text>
                     </Flex>
                     <Flex align={'center'} justify='space-around' w='100%'>
-                        <Button as={'a'} bg='#57346A' href='#about' color={'white'} h='50px' w={{sm:'200px',base:'150px'}} _hover={{bg:'green.100',color:'black'}}>Get started <RiArrowRightFill fontSize='20px' style={{marginLeft:'20px'}}/></Button>
-                        <Button as={'a'} href='#services' bg='red.600' color={'white'} h='50px' w={{sm:'200px',base:'150px'}} _hover={{bg:'green.100',color:'black'}}>View Services</Button>
+                        <Link to='/createAccount'>
+                            <Button bg='#57346A' color={'white'} h='50px' w={{sm:'200px',base:'150px'}} _hover={{bg:'green.100',color:'black'}}>Get started <RiArrowRightFill fontSize='20px' style={{marginLeft:'20px'}}/></Button>
+                        </Link>
+                        <Button as={'a'} href='#about' bg='red.600' color={'white'} h='50px' w={{sm:'200px',base:'150px'}} _hover={{bg:'green.100',color:'black'}}>View Services</Button>
                     </Flex>
                 </Flex>
             </Flex>

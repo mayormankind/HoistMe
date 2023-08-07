@@ -4,6 +4,7 @@ import Home from './Home';
 import About from './About';
 import Navigation from './Navigation';
 import Showcase from './Showcase';
+import Footer from './Footer';
 export default function WebsiteWrapper(){
     return(
         <Flex justify='center' align='center' flexDir={'column'}>
@@ -11,6 +12,7 @@ export default function WebsiteWrapper(){
             <Home/>
             <About/>
             <Showcase/>
+            <Footer/>
         </Flex>
     )
 }

@@ -20,18 +20,14 @@ export default function About(){
         )
     }
     return(
-        // <Flex w='100%' h='100%' color={'white'} flexDir='column' bg={'url(images/4.jpg)'} align='center' bgPos='center' bgRepeat='no-repeat' bgSize='cover'>
-        <Flex w='100%' h='100%' color={'white'} flexDir='column' bgGradient={'linear(to-br,#070722,#5e461926,#070722)'} align='center' bgPos='center' bgRepeat='no-repeat' bgSize='cover'>
-            {/* <Flex justify='center' align='center' flexDir='column' h='100%' w='100%' pos='relative' bg={'rgba(0,0,0,0.4)'} top='0' > */}
-            <Flex justify='center' align='center' flexDir='column' h='100%' w='100%' pos='relative' top='0' >
-                <Flex gap='20px' flexDir='column' justify='center' align='center' w='100%' maxW='1100px' p='60px 0' h='100%' >
-                    <Text fontSize={{sm:'3xl',base:'20px'}} fontWeight={'bold'} textAlign='center' color={'white'} w='100%' h='100%' p={{sm:'0',base:'0 20px'}} maxW='650px'>An experience you'd expect from hoistMe design system</Text>
-                    <Text textAlign='center' fontSize='sm'>Far greater than what you expect</Text>
-                    <Flex flexWrap='wrap' justify={{sm:'space-between',base:'center'}} gap='30px' align='center' w='100%' h='100%'>
-                        {blocks.map(block=>(
-                            <DesignBlock block={block}/>
-                        ))}
-                    </Flex>
+        <Flex w='100%' h='100%' color={'white'} flexDir='column' bgGradient={'linear(to-br,#070722,#7e7ebc,#070722)'} align='center'>
+            <Flex gap='20px' flexDir='column' justify='center' align='center' w='100%' maxW='1100px' p='60px 0' h='100%' >
+                <Text fontSize={{sm:'5xl',base:'20px'}} fontWeight={'bold'} textAlign='center' color={'white'} w='100%' h='100%' p={{sm:'0 10px',base:'0 20px'}} maxW='700px'>Experience you'd expect from hoistMe design system</Text>
+                <Text textAlign='center' fontSize={{sm:'20px', base:'17px'}}>Far greater than what you expect</Text>
+                <Flex flexWrap='wrap' justify={{sm:'space-between',base:'center'}} gap='30px' align='center' w='100%' h='100%' p={{sm:'15px',base:'0'}}>
+                    {blocks.map(block=>(
+                        <DesignBlock block={block}/>
+                    ))}
                 </Flex>
             </Flex>
         </Flex>
