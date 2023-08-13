@@ -13,6 +13,8 @@ import Signup from './components/Signup';
 import Home from './components/Home';
 import Dashboard from './components/Dashboard';
 import WebsiteWrapper from './components/WebWrapper';
+import Template1 from './components/Subfiles/Edit/Template1/tmp1';
+import Template2 from './components/Subfiles/Edit/Template2/tmp2';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path={'/login'} element={<Login/>}/>
           <Route path={'/createAccount'} element={<Signup/>}/>
           <Route path={'/dashboard'} element={<Dashboard/>}/>
+          <Route path={'/template1'} element={<Template1/>}/>
+          <Route path={'/template2'} element={<Template2/>}/>
         </Routes>
       </Router>
       {/* <Box textAlign="center" fontSize="xl">

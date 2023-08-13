@@ -1,18 +1,11 @@
 import react, {useState} from 'react';
-import { Avatar, Box, Flex, IconButton, Image, Text,Button } from '@chakra-ui/react';
-import { RiArrowGoForwardFill, RiArrowRightFill, RiMenu3Fill } from 'react-icons/ri';
+import { Flex, Text,Button } from '@chakra-ui/react';
+import { RiArrowRightFill} from 'react-icons/ri';
 import {Link} from 'react-router-dom';
 
-export default function Home(){
+export default function Template1Homepage(){
     const [ text, setText ] =useState('Where you get all that is necessary for your business?');
     const statements = ['Where you get all that is necessary for your business?','Looking for how to tell your customers about yourself','Wanting to have a better competitive advantage?']
-    const changeText = () =>{
-        let index = 0;        
-        setInterval(()=>{
-            setText(statements[index])
-            index = (index+1) % statements.length
-        },3000)
-    }
     return(
         <Flex w='100%' h='100vh' color={'white'} flexDir='column' bg={'url(images/5.jpg)'} align='center' bgPos='center' bgRepeat='no-repeat' bgSize='cover'>
             <Flex justify='center' align='center' flexDir='column' h='100%' w='100%' pos='relative' bg={'rgba(0,0,0,0.4)'} top='0'>

@@ -8,7 +8,7 @@ export default function NavBar({click,menu}){
         {id:1,navLabel:'Our Talks',path:'/dashboard',navType:'link'},
         {id:2,navLabel:'About',path:'/about',navType:'link'},
         {id:3,navLabel:'Login',path:'/login',navType:'button'},
-        {id:4,navLabel:'Create Account',path:'/create',navType:'button'},
+        {id:4,navLabel:'Create Account',path:'/createAccount',navType:'button'},
     ]
     return(
         <Box color='white' w='100%' flex='0.45' display={{sm:'block',base:menu==true ? 'flex' : 'none'}} h={{sm:'100%',base:'100vh'}} pos={{sm:'initial',base:'fixed'}} left={{sm:'initial',base:'0'}} top={{sm:'initial',base:'0'}} zIndex={{sm:'0',base:'10'}} bg={{sm:'initial',base:'rgb(0,0,0)'}} overflow='hidden'>
