@@ -3,8 +3,7 @@ import './App.css'
 import {
   ChakraProvider,
   Box,
-  Grid,
-  theme
+  Grid
 } from '@chakra-ui/react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
@@ -15,6 +14,7 @@ import Dashboard from './components/Dashboard';
 import WebsiteWrapper from './components/WebWrapper';
 import Template1 from './components/Subfiles/Edit/Template1/tmp1';
 import Template2 from './components/Subfiles/Edit/Template2/tmp2';
+import theme from './chakra';
 
 function App() {
   return (
@@ -29,11 +29,6 @@ function App() {
           <Route path={'/template2'} element={<Template2/>}/>
         </Routes>
       </Router>
-      {/* <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end"/>
-        </Grid>
-      </Box> */}
     </ChakraProvider>
   );
 }

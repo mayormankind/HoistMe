@@ -20,9 +20,10 @@ export default function About(){
         )
     }
     return(
-        <Flex w='100%' h='100%' color={'white'} flexDir='column' bgGradient={'linear(to-br,#070722,#7e7ebc,#070722)'} align='center'>
-            <Flex gap='20px' flexDir='column' justify='center' align='center' w='100%' maxW='1100px' p='60px 0' h='100%' >
-                <Text fontSize={{sm:'5xl',base:'20px'}} fontWeight={'bold'} textAlign='center' color={'white'} w='100%' h='100%' p={{sm:'0 10px',base:'0 20px'}} maxW='700px'>Experience you'd expect from hoistMe design system</Text>
+        // <Flex w='100%' h='100%' color={'white'} flexDir='column' bgGradient={'linear(to-br,#070722,#7e7ebc,#070722)'} align='center'>
+        <Flex w='100%' h='100%' flexDir='column'>
+            <Flex gap='20px' flexDir='column' justify='center' align='center' w='100%' maxW='1100px' p='60px 0' h='100%' m='auto'>
+                <Text fontSize={{sm:'5xl',base:'20px'}} fontWeight={'bold'} textAlign='center' w='100%' h='100%' p={{sm:'0 10px',base:'0 20px'}} maxW='700px'>Experience you'd expect from hoistMe design system</Text>
                 <Text textAlign='center' fontSize={{sm:'20px', base:'17px'}}>Far greater than what you expect</Text>
                 <Flex flexWrap='wrap' justify={{sm:'space-between',base:'center'}} gap='30px' align='center' w='100%' h='100%' p={{sm:'15px',base:'0'}}>
                     {blocks.map(block=>(

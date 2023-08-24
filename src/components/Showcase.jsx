@@ -24,10 +24,11 @@ export default function Showcase(){
         )
     }
     return(
-        <Flex w='100%' h='100%' color={'white'} flexDir='column' bg={'url(images/4.jpg)'} align='center' bgPos='center' bgRepeat='no-repeat' bgSize='cover'>
-        <Flex justify='center' align='center' flexDir='column' h='100%' w='100%' pos='relative' bg={'rgba(0,0,0,0.4)'} top='0' >
-            <Flex gap='20px' flexDir='column' justify='center' align='center' w='100%' maxW='1100px' p='60px 0' h='100%' >
-                <Text as={'h1'} fontSize={{lg:'6xl',sm:'5xl',base:'40px'}} fontWeight={'bold'} textAlign='center' color={'white'} w='100%' h='100%' p={{sm:'0',base:'0 20px'}}>Designed with HoistMe!</Text>
+        // <Flex w='100%' h='100%' color={'white'} flexDir='column' bg={'url(images/4.jpg)'} align='center' bgPos='center' bgRepeat='no-repeat' bgSize='cover'>
+        <Flex w='100%' h='100%' flexDir='column'>
+        {/* <Flex justify='center' align='center' flexDir='column' h='100%' w='100%' pos='relative' bg={'rgba(0,0,0,0.4)'} top='0' > */}
+            <Flex gap='20px' flexDir='column' justify='center' align='center' w='100%' maxW='1100px' p='60px 0' h='100%' m='auto'>
+                <Text as={'h1'} fontSize={{lg:'6xl',sm:'5xl',base:'40px'}} fontWeight={'bold'} textAlign='center' w='100%' h='100%' p={{sm:'0',base:'0 20px'}}>Designed with HoistMe!</Text>
                 <Text fontSize={{sm:'20px',base:'17px'}} p='0 10px' maxW='550px' textAlign='center'>With the HoistMe platform, you could make your own portfolio in lesser time with no code</Text>
                 <Flex flexWrap='wrap' justify={{sm:'space-between',base:'center'}} gap='30px' align='center' w='100%' h='100%'>
                     {blocks.map(block=>(
@@ -35,7 +36,7 @@ export default function Showcase(){
                     ))}
                 </Flex>
             </Flex>
-        </Flex>
+        {/* </Flex> */}
     </Flex>
     )
 }
