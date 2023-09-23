@@ -3,6 +3,7 @@ import { Avatar, Box, Flex, IconButton, Icon, Image, Text,Button } from '@chakra
 import { RiPaletteFill } from 'react-icons/ri';
 import Navigation from './Navigation';
 import MaxWrapper from './MaxWrapper';
+import { ColoredBox } from '../chakra/styles';
 
 export default function Showcase(){
     const blocks = [
@@ -14,8 +15,9 @@ export default function Showcase(){
         {id:5,webname:'Maskara',image:'6.jpg'}
     ]
     const DesignBlock = ({block}) =>{
+        // bg='#57346A'
         return(
-            <Flex flexDir='column' p='20px' gap='10px' bg='#57346A' w='100%' maxW='300px' key={block.id} h='100%' minH='200px' borderRadius='10px' boxShadow='xl'>
+            <Flex flexDir='column' p='20px' gap='10px' w='100%' maxW='300px' key={block.id} h='100%' minH='200px' borderRadius='10px' boxShadow='xl'>
                 <Box w='100%' h='300px' bg={`url(images/${block.image})`} bgPos='center' bgSize='contain'>
                     {/* <Image src={`images/${block.image}`} h='100%' w='100%'/> */}
                 </Box>
@@ -32,9 +34,10 @@ export default function Showcase(){
                 <Text fontSize={{sm:'20px',base:'17px'}} p='0 10px' maxW='550px' textAlign='center'>With the HoistMe platform, you could make your own portfolio in lesser time with no code</Text>
                 <Flex flexWrap='wrap' justify={{sm:'space-between',base:'center'}} gap='30px' align='center' w='100%' h='100%'>
                     {blocks.map(block=>(
-                        <DesignBlock block={block}/>
+                        <DesignBlock block={block} key={block.id}/>
                     ))}
                 </Flex>
+                {/* <ColoredBox/> */}
             </Flex>
         {/* </Flex> */}
     </Flex>

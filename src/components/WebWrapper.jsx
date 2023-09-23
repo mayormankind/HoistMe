@@ -1,4 +1,4 @@
-import { Flex, Box } from '@chakra-ui/react';
+import { Flex, Box, Divider } from '@chakra-ui/react';
 import react from 'react';
 import Home from './Home';
 import About from './About';
@@ -11,7 +11,9 @@ export default function WebsiteWrapper(){
             <Navigation/>
             <Home/>
             <About/>
+            <Divider/>
             <Showcase/>
+            <Divider/>
             <Footer/>
         </Flex>
     )

@@ -4,6 +4,14 @@ import { RiGoogleFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 // bg='#070722'
 export default function Signup(){
+    // const passInput = document.querySelector(".password");
+    // const [isPassword, setisPassword] = useState(true);
+    // const [Accountinfo,setAccountInfo] = useState({});
+    // const inputRef = useRef();
+    // const navigate = useNavigate();
+    // const createAccount = () =>{
+    //     SignUpWithEmail(Accountinfo.email, Accountinfo.password)
+    // }
     return(
         <Flex w='100%' h='100vh' flexDir='column' justify='center' align='center' bg='url(images/3.jpg)' bgRepeat='no-repeat' bgPos='center' bgSize={{sm:'contain',base:'cover'}}>
             <Flex pos='relative' bg='rgba(0,0,0,0.6)' justify='center' align='center' flexDir='column' h='100%' w='100%' top='0' p={{sm:'0',base:'0 20px'}} color='white'>

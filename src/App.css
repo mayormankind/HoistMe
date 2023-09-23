@@ -3,11 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
-.App{
+/* .App{
     /* background: #5085e7; */
     /* background: #070722; */
     /* background: #252588; */
     /* background: #8787ea; */
     /* background: #08081c; */
-    background: #5e461926;
+    /* background: #1a187cb4; */
+    /* } */
+body{
+    /* background: #1a187c; */
+    /* background: #0c0c34; */
+    background: linear-gradient(top to bottom,#0c0c34, #1a187c);
 }

@@ -6,10 +6,8 @@ import {
   Grid
 } from '@chakra-ui/react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
 import Login from './components/Login';
 import Signup from './components/Signup';
-import Home from './components/Home';
 import Dashboard from './components/Dashboard';
 import WebsiteWrapper from './components/WebWrapper';
 import Template1 from './components/Subfiles/Edit/Template1/tmp1';

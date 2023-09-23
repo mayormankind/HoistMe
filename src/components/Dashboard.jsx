@@ -1,4 +1,4 @@
-import { Avatar, Button, Flex, Heading,Box,Text, Image } from "@chakra-ui/react";
+import { Avatar, Button, Flex, Heading,Box,Text, Image, Grid } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import ListBox from "./Subfiles/Edit/ListBox";
 import ListItemBox from "./Subfiles/Edit/ListItemBox";
@@ -16,7 +16,7 @@ export default function Dashboard(){
         {id:'5',templatecode:'tmp6',templateImage:'images/3.jpg',link:'/template2'},
     ]
     return(
-        <Flex w='100%' h='100vh' bg='white' justify='center' align='center'>
+        <Flex w='100%' h='100vh' bg='white' justify='center' align='center' color='black'>
             <Flex gap='40px' flexDir='column' align='center' w='100%' maxW='1100px' h='100%' >
                 <Flex w='100%' justify='space-between' align='center' p={{sm:'10px 0',base:'10px 20px'}} borderBottom='2px solid black'>
                     <Text fontWeight='semibold'>Welcome back Mankind243!</Text>
@@ -42,7 +42,8 @@ export default function Dashboard(){
                 </Flex>
                 <Flex w='100%' h='100%' flexDir='column' gap='10px'>
                     <Text fontWeight='semibold'>Available HoistMe templates</Text>
-                    <ListBox>
+                    {/* <ListBox> */}
+                    <Grid w='100%' h={'100%'} flexWrap='wrap' justify={'space-around'} gap='30px' gridTemplateColumns={'repeat(auto-fit, minmax(13rem, 1fr))'} p='30px'>
                         {Templates.map(template=>(
                             <Link to={template.link} mx='auto'>
                                 <ListItemBox>
@@ -55,7 +56,8 @@ export default function Dashboard(){
                                 </Box> */}
                             </Link>
                         ))}
-                    </ListBox>
+                    </Grid>
+                    {/* </ListBox> */}
                     {/* <Flex gap='30px' flexWrap='wrap' w='100%' h='100%'>
                     </Flex> */}
                 </Flex>

@@ -13,9 +13,9 @@ export default function Login(){
                         <Input type='text' placeholder='Your username ...' w='100%' h='50px'_placeholder={{color:'lightgray'}}/>
                         <Input type='text' placeholder='Enter your password ...' w='100%' h='50px'_placeholder={{color:'lightgray'}}/>
                         <Text borderBottom='1px solid #C52568'w='fit-content'>Forgotten password?</Text>
-                        <Link to='/dashboard'>
-                            <Button bg='#C52568'>Login to Account</Button>
-                        </Link>
+                        <Button bg='#C52568'>
+                            <Link to='/dashboard'>Login to Account</Link>
+                        </Button>
                         <Text textAlign='center' fontSize='small'>Don't have an account yet? <Link to='/createAccount' color='#C52568'>Create an account</Link></Text>
                     </Flex>
                 </Flex>

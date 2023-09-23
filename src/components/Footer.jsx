@@ -6,10 +6,10 @@ import { ColorModeSwitcher } from '../ColorModeSwitcher';
 export default function Footer() {
   const Links = [
     {id:'0',icon:<RiGithubFill/>,link:'http://github/mayormankind.com'},
-    {id:'0',icon:<RiYoutubeFill/>,link:'http://github/mayormankind.com'},
-    {id:'0',icon:<RiTwitterFill/>,link:'http://github/mayormankind.com'},
-    {id:'0',icon:<RiMailFill/>,link:'http://github/mayormankind.com'},
-    {id:'0',icon:<RiWhatsappFill/>,link:'http://github/mayormankind.com'},
+    {id:'1',icon:<RiYoutubeFill/>,link:'http://github/mayormankind.com'},
+    {id:'2',icon:<RiTwitterFill/>,link:'http://github/mayormankind.com'},
+    {id:'3',icon:<RiMailFill/>,link:'http://github/mayormankind.com'},
+    {id:'4',icon:<RiWhatsappFill/>,link:'http://github/mayormankind.com'},
   ]
   return (
     <Flex w='100%' h='100%' flexDir='column' align='center'>
@@ -19,7 +19,7 @@ export default function Footer() {
             <Flex align='center' justify='space-between' w='100%'>
               <Flex>
                 {Links.map((acc)=>(
-                  <IconButton fontSize='20px' as='a' icon={acc.icon} href={acc.link} variant={'ghost'}/>
+                  <IconButton fontSize='20px' key={acc.id} as='a' icon={acc.icon} href={acc.link} variant={'ghost'}/>
                 ))}
               </Flex>
               <ColorModeSwitcher/>

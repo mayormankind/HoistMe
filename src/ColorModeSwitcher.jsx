@@ -7,14 +7,14 @@ export const ColorModeSwitcher = props => {
   const text = useColorModeValue('dark', 'light');
   const modes = [
     {id:0,icon:<FaMoon/>},
-    {id:0,icon:<FaSun/>},
-    {id:0,icon:<FaDesktop/>}
+    {id:1,icon:<FaSun/>},
+    {id:2,icon:<FaDesktop/>}
   ]
 
   return (
     <Flex border={`1px solid ${text=='dark'?'white':'black'}`} borderRadius='xl'>
       {modes.map(mode=>(
-        <IconButton
+        <IconButton key={mode.id}
           size="md"
           fontSize="lg"
           aria-label={`Switch to ${text} mode`}

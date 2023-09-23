@@ -11,14 +11,14 @@ const theme = extendTheme({
         "2xl": "1536px"
     },
     styles: {
-        // global: (props)=>({
+        global: (props)=>({
             body: {
                 bg: mode('white','black')(props),
                 color: mode('black','white')(props),
                 // fontFamily: 'Constantia',
-                fontFamily: 'Harlow Solid Italic',
+                // fontFamily: 'Harlow Solid Italic',
             },
-        // }),
+        }),
     },
     colors:{
         bkg:{
@@ -42,7 +42,7 @@ const theme = extendTheme({
                     color: 'black',
                 },
                 'd-with-border': {
-                    border: '1px solid white',
+                    variant: 'outline',
                     color:'white',
                 },
                 'w-with-d': {
@@ -50,7 +50,8 @@ const theme = extendTheme({
                     color: 'white',
                 },
                 'w-with-border': {
-                    border: '1px solid black',
+                    // border: '1px solid black',
+                    variant: 'outline',
                     color:'black',
                 }
             }
