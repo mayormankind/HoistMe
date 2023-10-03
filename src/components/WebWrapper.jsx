@@ -9,7 +9,9 @@ export default function WebsiteWrapper(){
     return(
         <Flex justify='center' align='center' flexDir={'column'}>
             <Navigation/>
+            <Divider/>
             <Home/>
+            <Divider/>
             <About/>
             <Divider/>
             <Showcase/>

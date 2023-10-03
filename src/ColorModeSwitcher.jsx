@@ -23,6 +23,7 @@ export const ColorModeSwitcher = props => {
           onClick={toggleColorMode}
           icon={mode.icon}
           {...props}
+          _hover={{transform:'translateY(-5px)'}}
         />
       ))}
     </Flex>
