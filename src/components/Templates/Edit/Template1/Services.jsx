@@ -14,7 +14,7 @@ export default function Services() {
         {id:'5',service:'Make Fascinating Designs',detail:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, et suscipit recusandae in laboriosam error earum quod eum numquam quisquam adipisci autem doloribus saepe odit nesciunt debitis.'},
     ];
   return (
-    <Flex bg='white' w='100%' h='100%' mb='60px'>
+    <Flex w='100%' h='100%' flexDir='column'>
         <MaxContainer>
             <Box p='20px 0' w='100%'>
                 <Text fontSize='3xl' textAlign='center' fontWeight='semibold'>Services we render</Text>

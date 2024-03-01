@@ -1,7 +1,7 @@
 import React from 'react';
 import { Flex, IconButton, Text } from '@chakra-ui/react';
 import { RiMailFill, RiGithubFill, RiTwitterFill, RiYoutubeFill, RiWhatsappFill } from 'react-icons/ri';
-import { ColorModeSwitcher } from '../ColorModeSwitcher';
+import { ColorModeSwitcher } from '../../ColorModeSwitcher';
 
 export default function Footer() {
   const Links = [

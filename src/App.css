@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* .App{
     /* background: #5085e7; */
     /* background: #070722; */
@@ -14,6 +17,10 @@
 body{
     /* background: #1a187c; */
     /* background: #0c0c34; */
-    background:#618ae8;
+    /* background:#8aadd3; */
+    /* background:#b8d9fc; */
+    /* background:#071019; */
+    background:#2463f5;
+    /* '#57346A' */
     /* background: linear-gradient(top to bottom,#0c0c34, #1a187c); */
 }

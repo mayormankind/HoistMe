@@ -15,46 +15,65 @@ const theme = extendTheme({
             body: {
                 bg: mode('white','black')(props),
                 color: mode('black','white')(props),
-                // fontFamily: 'Constantia',
-                // fontFamily: 'Harlow Solid Italic',
             },
         }),
     },
+    fonts: {
+        heading: 'Raleway, sans-serif',
+        body: 'Poppins, sans-serif',
+    },
     colors:{
-        bkg:{
-            500: "black",
-            100: "#1e1c1c"
-        },
         text:{
             100: "#fff",
             200: "#000"
         },
         header:{
-            100: "#fff",
-            200: "purple"
-        }
+            100: "#618ae8",
+            200: "#2463f5"
+        },
+        darkbg: '#071019',
+        lightbg:'#b8d9fc',
+        linkcolor: '#007BFF',
     },
     components: {
         Button: {
+            baseStyle: {
+                fontWeight: '200',
+                fontFamily: 'body',
+                fontSize: 'sm'
+            },
             variants: {
-                'd-with-w': {
-                    bg: 'white',
+                'with-bg': {
+                    bg:'#3498db',
                     color: 'black',
                 },
-                'd-with-border': {
+                'no-bg':{
                     variant: 'outline',
-                    color:'white',
-                },
-                'w-with-d': {
-                    bg: 'black',
                     color: 'white',
-                },
-                'w-with-border': {
-                    // border: '1px solid black',
-                    variant: 'outline',
-                    color:'black',
                 }
             }
+        },
+        Text: {
+            baseStyle: {
+                fontFamily: 'body',
+            }
+        },
+        Input: {
+            baseStyle:{
+                height: '50px',
+                boxShadow: 'outline',
+                borderColor: "#8aadd3",
+                borderWidth: '2px',
+            }
+        },
+        Divider: {
+            baseStyle:{
+                borderColor: "#007BFF",
+                borderWidth: '2px',
+            }
+        },
+        InputLeftElement:{
+            fontSize: '1.2em',
         }
     }
 })

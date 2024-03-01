@@ -21,7 +21,7 @@ export default function Samples() {
                 <ListBox>
                     {samples.map(sample=>(
                         <ListItemBox id={sample.id}>
-                            <Image src={sample.src} w='100%' h='100%'/>
+                            <Image src={sample.src} w='100%' h='100%' maxH='300px'/>
                         </ListItemBox>
                     ))}
                 </ListBox>
