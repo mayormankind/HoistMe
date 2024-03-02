@@ -15,18 +15,18 @@ export default function Signup(){
   const [ error, setError ] = useState({});
 //   const { user } = useContext(Context);
 
-//   const handleClick = () => setShow(!show);
+  const handleClick = () => setShow(!show);
 
-//   const validate = ()=>{
-//     let errors = {}
-//     if(!Userinfo.username) errors.username = 'Username field is empty'
-//     if(!Userinfo.email) errors.email = 'Email field is empty'
-//     if(!Userinfo.password) errors.password = 'Password field is empty'
-//     if(!Userinfo.brandname) errors.brandname = 'Brandname field is empty'
+  const validate = ()=>{
+    let errors = {}
+    if(!Userinfo.username) errors.username = 'Username field is empty'
+    if(!Userinfo.email) errors.email = 'Email field is empty'
+    if(!Userinfo.password) errors.password = 'Password field is empty'
+    if(!Userinfo.brandname) errors.brandname = 'Brandname field is empty'
     
-//     setError(errors)
-//     return Object.keys(errors).length === 0;
-//   }
+    setError(errors)
+    return Object.keys(errors).length === 0;
+  }
   
 //   const createAccount = async(e) =>{
 //     e.preventDefault();
@@ -67,11 +67,6 @@ export default function Signup(){
             <Flex p='30px' w='100%' maxW='450px' bg={'rgba(155,155,155,0.3)'} boxShadow='lg' borderRadius='lg' flexDir='column' gap='20px' m='auto'>
                 <RiFlagFill fontSize='50px' style={{alignSelf:'center'}}/>
                 <Heading as='h3' textAlign='center'>Hi there!</Heading>
-                {/* <Button leftIcon={<RiGoogleFill/>} h='50px'> Signup with Google</Button>
-                <Box pos='relative' p='5'>
-                    <Divider/>
-                    <AbsoluteCenter px='10'>OR</AbsoluteCenter>
-                </Box> */}
                 <Flex w='100%' flexDir='column' gap='15px'>
                     <InputGroup size='lg'>
                         <InputLeftElement pointerEvents={'none'}><RiUser2Fill/></InputLeftElement>

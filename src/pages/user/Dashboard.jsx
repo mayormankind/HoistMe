@@ -18,7 +18,7 @@ export default function Dashboard(){
             <Navigation/>
             <Flex gap='40px' flexDir='column' align='center' w='100%' maxW='1100px' h='100%' m='auto'>
                 <Flex w='100%' justify='space-between' align='center' p={{sm:'10px 0',base:'10px 20px'}} borderBottom='2px solid black'>
-                    <Text fontWeight='semibold'>Welcome back Mankind243!</Text>
+                    <Text fontWeight='semibold'>Welcome back, Mankind243!</Text>
                     <Avatar boxSize='40px' src='images/2.jpg'/>
                 </Flex>
                 <Flex w='100%' h='100%' flexDir='column' gap='10px'>
