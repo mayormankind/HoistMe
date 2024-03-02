@@ -6,8 +6,8 @@ import {
   Grid,
 } from '@chakra-ui/react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Template1 from './components/Templates/Edit/Template1/tmp1';
-import Template2 from './components/Templates/Edit/Template2/tmp2';
+import Template1 from './components/Templates/Edit/Template1/Tmp1';
+import Template2 from './components/Templates/Edit/Template2/Tmp2';
 import Landing from './pages/landing/Landing';
 import theme from './chakra';
 import Login from './pages/landing/Login';
