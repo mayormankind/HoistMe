@@ -1,7 +1,8 @@
 import React from 'react';
-import { Flex, IconButton, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, IconButton, Text } from '@chakra-ui/react';
 import { RiMailFill, RiGithubFill, RiTwitterFill, RiYoutubeFill, RiWhatsappFill } from 'react-icons/ri';
 import { ColorModeSwitcher } from '../../ColorModeSwitcher';
+import { HeadLogo, LinkText } from '../../chakra/styles';
 
 export default function Footer() {
   const Links = [
@@ -24,6 +25,24 @@ export default function Footer() {
               </Flex>
               <ColorModeSwitcher/>
             </Flex>
+        </Flex>
+        <Flex bg='hblue' w='100%' h='100%' p='30px 0'>
+          <Flex w='100%' maxW='1100px' h='100%' mx='auto' justify='space-between' align='center'>
+            <Box flex='1'>
+              <HeadLogo/>
+            </Box>
+            <Box flex='2'>
+              <Heading fontSize='lg'>Links</Heading>
+              <Flex flexDir='column'>
+                <LinkText path={'/home'} text={'Home'}/>
+                <LinkText path={'/about'} text={'About'}/>
+                <LinkText path={'/services'} text={'Services'}/>
+              </Flex>
+            </Box>
+          </Flex>
+        </Flex>
+        <Flex>
+          
         </Flex>
     </Flex>
   )

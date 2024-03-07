@@ -23,14 +23,7 @@ const theme = extendTheme({
         body: 'Poppins, sans-serif',
     },
     colors:{
-        text:{
-            100: "#fff",
-            200: "#000"
-        },
-        header:{
-            100: "#618ae8",
-            200: "#2463f5"
-        },
+        hblue: '#3498db',
         darkbg: '#071019',
         lightbg:'#b8d9fc',
         linkcolor: '#007BFF',
@@ -44,12 +37,17 @@ const theme = extendTheme({
             },
             variants: {
                 'with-bg': {
-                    bg:'#3498db',
+                    bg:'hblue',
                     color: 'black',
                 },
                 'no-bg':{
                     variant: 'outline',
                     color: 'white',
+                },
+                'customOutline':{
+                    variant: 'outline',
+                    borderWidth: '2px',
+                    borderColor: 'hblue',
                 }
             }
         },

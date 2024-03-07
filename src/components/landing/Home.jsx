@@ -41,15 +41,6 @@ export default function Home(){
     return () => clearInterval(typingInterval);
   }, [index, isDeleting, phraseArr, phrase]);
     
-        
-    // useEffect(()=>{
-    //     // const changeWord = setInterval(()=>{
-    //     //     setPhrase(phraseArr[index]);
-    //     //     setIndex(index === phraseArr.length - 1 ? 0 : index + 1);
-    //     // },4000)
-    //     // return () => clearInterval(changeWord)
-    // },[index, phraseArr])
-
     const anim = keyframes`
         0%{transform: translateX(20px)}
         100%{transform: translateX(0)}
@@ -66,7 +57,7 @@ export default function Home(){
                         <Link to='/createAccount'>
                             <Button variant='with-bg' h='50px' w={{sm:'200px',base:'150px'}} >Get started <RiArrowRightFill fontSize='20px' style={{marginLeft:'20px',animation:`${anim} 2s linear infinite`}}/></Button>
                         </Link>
-                        <Button as={'a'} href='#about' h='50px' w={{sm:'200px',base:'150px'}} _hover={{borderColor:'blue.400'}}>View Services</Button>
+                        <Button as={'a'} href='#about' h='50px' w={{sm:'200px',base:'150px'}} variant={'customOutline'} _hover={{borderColor:'blue.400'}}>View Services</Button>
                     </Flex>
                 </Flex>
         </Flex>

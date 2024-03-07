@@ -27,7 +27,7 @@ export default function NavBar({menu,setMenu}){
                 </HStack>
                 <HStack spacing='3'>
                     <Link to={'/login'} p={{sm:'0',base:'5px'}}> 
-                        <Button>Login</Button>
+                        <Button variant='customOutline'>Login</Button>
                     </Link>
                     <Link to={'/createAccount'} p={{sm:'0',base:'5px'}}> 
                         <Button variant={'with-bg'}>Sign Up</Button>
