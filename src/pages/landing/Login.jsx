@@ -1,6 +1,6 @@
 import react, { useState } from 'react';
-import { Box, Flex, Text, Button, IconButton, Input, Heading, Divider, AbsoluteCenter, InputGroup, InputLeftElement, InputRightElement } from '@chakra-ui/react';
-import { RiEyeFill, RiEyeOffFill, RiFlagFill, RiGoogleFill, RiLockPasswordFill, RiMailFill } from 'react-icons/ri';
+import { Flex, Text, Button, Input, Heading, InputGroup, InputLeftElement, InputRightElement } from '@chakra-ui/react';
+import { RiEyeFill, RiEyeOffFill, RiFlagFill, RiLockPasswordFill, RiMailFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 
 export default function Login(){
@@ -9,15 +9,10 @@ export default function Login(){
     const handleClick = () => setShow(!show);
 
     return(
-        <Flex w='100%' h='100vh' flexDir='column'>
-            <Flex p='30px' w='100%' maxW='450px' bg={'rgba(155,155,155,0.3)'} boxShadow='2xl' borderRadius='lg' flexDir='column' gap='20px' m='auto'>
+        <Flex w='100%' h='100vh' flexDir='column' bg={'url(images/photography.jpg)'} bgPos={'center'} bgSize={'cover'}>
+            <Flex p='30px' w='100%' maxW='450px' bg={'rgba(155,155,155,0.7)'} boxShadow='2xl' borderRadius='lg' flexDir='column' gap='20px' m='auto'>
                 <RiFlagFill fontSize='50px' style={{alignSelf:'center'}}/>
                 <Heading as='h3' textAlign='center'>Welcome back!</Heading>
-                {/* <Button leftIcon={<RiGoogleFill/>} h='50px'> Continue with Google</Button>
-                <Box pos='relative' p='5'>
-                    <Divider/>
-                    <AbsoluteCenter px='10'>OR</AbsoluteCenter>
-                </Box> */}
                 <Flex w='100%' flexDir='column' gap='15px'>
                     <InputGroup size='lg'>
                         <InputLeftElement pointerEvents={'none'}><RiMailFill/></InputLeftElement>

@@ -5,11 +5,10 @@ import MaxContainer from '../MaxContainer';
 
 export default function Footer() {
   const Links = [
-    {id:'0',icon:<RiGithubFill/>,link:'http://github/mayormankind.com'},
-    {id:'0',icon:<RiYoutubeFill/>,link:'http://github/mayormankind.com'},
-    {id:'0',icon:<RiTwitterFill/>,link:'http://github/mayormankind.com'},
-    {id:'0',icon:<RiMailFill/>,link:'http://github/mayormankind.com'},
-    {id:'0',icon:<RiWhatsappFill/>,link:'http://github/mayormankind.com'},
+    {icon:<RiYoutubeFill/>,link:'http://github/mayormankind.com'},
+    {icon:<RiTwitterFill/>,link:'http://github/mayormankind.com'},
+    {icon:<RiMailFill/>,link:'http://github/mayormankind.com'},
+    {icon:<RiWhatsappFill/>,link:'http://github/mayormankind.com'},
   ]
   return (
     <Flex w='100%' h='100%' color={'white'} flexDir='column' bg='black' align='center'>
@@ -20,8 +19,8 @@ export default function Footer() {
                     <Text>Reaching us is not far from you. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, et suscipit recusandae in laboriosam error earum quod eum numquam quisquam adipisci autem doloribus saepe odit nesciunt debitis.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, et suscipit recusandae in laboriosam error earum quod eum numquam quisquam adipisci autem doloribus saepe odit nesciunt debitis.</Text>
                 </Box>
                 <Flex>
-                {Links.map((acc)=>(
-                    <IconButton fontSize='20px' as='a' icon={acc.icon} href={acc.link} variant={'ghost'}/>
+                {Links.map((acc,id)=>(
+                    <IconButton fontSize='20px' key={id} as='a' icon={acc.icon} href={acc.link} variant={'ghost'}/>
                 ))}
                 </Flex>
             </Flex>

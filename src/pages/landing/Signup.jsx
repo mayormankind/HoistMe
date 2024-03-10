@@ -1,5 +1,5 @@
 import react, { useState } from 'react';
-import { Box, Flex, Text, Button, IconButton, Input, Heading, Divider, AbsoluteCenter, InputGroup, InputLeftElement, InputRightElement } from '@chakra-ui/react';
+import { Box, Flex, Text, Button, IconButton, Input, Heading, InputGroup, InputLeftElement, InputRightElement } from '@chakra-ui/react';
 import { RiFlag2Fill, RiFlagFill, RiGoogleFill, RiLockPasswordFill, RiMailFill, RiUser2Fill, RiEyeOffFill, RiEyeFill } from 'react-icons/ri';
 import { Link, useNavigate } from 'react-router-dom';
 // import {auth, db, store } from './firebase';
@@ -63,8 +63,8 @@ export default function Signup(){
 // }
 
     return(
-        <Flex w='100%' h='100vh' flexDir='column'>
-            <Flex p='30px' w='100%' maxW='450px' bg={'rgba(155,155,155,0.3)'} boxShadow='lg' borderRadius='lg' flexDir='column' gap='20px' m='auto'>
+        <Flex w='100%' h='100vh' flexDir='column' bg={'url(images/photography.jpg)'} bgPos={'center'} bgSize={'cover'}>
+            <Flex p='30px' w='100%' maxW='450px' bg={'rgba(155,155,155,0.7)'} boxShadow='lg' borderRadius='lg' flexDir='column' gap='20px' m='auto'>
                 <RiFlagFill fontSize='50px' style={{alignSelf:'center'}}/>
                 <Heading as='h3' textAlign='center'>Hi there!</Heading>
                 <Flex w='100%' flexDir='column' gap='15px'>
