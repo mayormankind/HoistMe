@@ -22,9 +22,10 @@ export default function Dashboard(){
     ]
     return(
         <Box>
-            <Navigation/>
+            <Navigation click={'Dashboard'}/>
             <Flex gap='40px' flexDir='column' align='center' w='100%' maxW='1100px' h='100%' m='auto' p='20px'>
-                <Flex w='100%' justify='space-between' flexDir='column' p={'30px 20px'} bg='hblue' pos='relative'>
+                <Flex w='100%' justify='space-between' flexDir='column' p={{sm:'30px 20px',base:'30px 10px'} 
+                }bg='hblue' pos='relative'>
                     {/* <Flex w='100%' flexDir='column'> */}
                         <Flex justify='space-between' align='center' gap='20px'>
                             <Text fontWeight='semibold'>Welcome back, Mankind243!</Text>

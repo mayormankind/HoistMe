@@ -25,11 +25,11 @@ export default function Login(){
                             {!show ? <RiEyeOffFill onClick={handleClick}/> : <RiEyeFill onClick={handleClick}/> }
                         </InputRightElement>
                     </InputGroup>
-                    <Text textAlign='right'><Button as='span' variant='link' color='linkcolor'><Link to='/passwordReset'>Forgotten password? </Link></Button></Text>
+                    <Text textAlign='right'><Button as='span' variant='link' color='darkbg'><Link to='/passwordReset'>Forgotten password? </Link></Button></Text>
                     <Button variant='with-bg'>
                         <Link to='/dashboard'>Login to Account</Link>
                     </Button>
-                    <Text textAlign='center'>Don't have an account yet? <Button variant='link' color='linkcolor'><Link to='/createAccount' color='header.100'> Create account</Link></Button></Text>
+                    <Text textAlign='center'>Don't have an account yet? <Button variant='link' color='darkbg'><Link to='/createAccount' color='header.100'> Create account</Link></Button></Text>
                 </Flex>
             </Flex>
         </Flex>

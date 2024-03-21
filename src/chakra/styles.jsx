@@ -1,7 +1,7 @@
-import { Box, Button, Flex, Heading, IconButton, Input, InputGroup, InputLeftElement, InputRightElement, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, IconButton, Input, InputGroup, InputLeftElement, InputRightElement, Link, Text } from "@chakra-ui/react";
 import { RandomizeColor } from "../api";
 import { RiArrowDropDownFill, RiArrowGoBackFill, RiEyeFill, RiEyeOffFill, RiFlagFill, RiLock2Fill, RiLockFill, RiMailFill } from 'react-icons/ri';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useState } from "react";
 
 export const ColoredBox = () =>{
@@ -12,16 +12,16 @@ export const ColoredBox = () =>{
 
 export const HeadLogo = () =>{
     return(
-        <Link to={'/'} flex='0.3'>
-            <Flex align='center' gap='5px' fontFamily={'heading'} fontSize='22px' _hover={{color: '#3498db'}} cursor={'pointer'}><RiFlagFill/>HoistMe</Flex>
-        </Link>
+        <NavLink to={'/'} flex='0.3'>
+            <Flex align='center' gap='5px' fontFamily={'heading'} fontSize='22px' _hover={{color: '#3498db'}} cursor={'pointer'} fontWeight={'bold'}><RiFlagFill/>HoistMe</Flex>
+        </NavLink>
     )
 }
-export const LinkText = ({ path, text }) =>{
+export const LinkText = ({ path, text, icon }) =>{
     return(
-        <a href={path} flex='0.3'>
-            <Text>{text}</Text>
-        </a>
+        <Link href={path} flex='0.3'>
+            <Button variant='link' color='black' leftIcon={icon ? icon : ''}>{text}</Button>
+        </Link>
     )
 }
 

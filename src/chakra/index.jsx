@@ -10,14 +10,6 @@ const theme = extendTheme({
         xl: "1200px",
         "2xl": "1536px"
     },
-    styles: {
-        global: (props)=>({
-            body: {
-                bg: mode('white','black')(props),
-                color: mode('black','white')(props),
-            },
-        }),
-    },
     fonts: {
         heading: 'Raleway, sans-serif',
         body: 'Poppins, sans-serif',

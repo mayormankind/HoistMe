@@ -90,7 +90,7 @@ export default function Signup(){
                     <Button variant='with-bg'>
                         <Link to='/dashboard'>Login to Account</Link>
                     </Button>
-                    <Text textAlign='center'>Already have an account? <Button variant='link' color='linkcolor'><Link to='/login' color='header.100'>Login</Link></Button></Text>
+                    <Text textAlign='center'>Already have an account? <Button variant='link' color='darkbg'><Link to='/login' color='header.100'>Login</Link></Button></Text>
                 </Flex>
             </Flex>
         </Flex>
