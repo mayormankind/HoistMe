@@ -15,14 +15,14 @@ export default function Samples({ handleModal }) {
         {src:'images/3.jpg'}
     ]
   return (
-    <Flex bg='lightgray' w='100%' h='100%'>
+    <Flex bg='whitesmoke' w='100%' h='100%' id='samples'>
         <MaxContainer>
             <Flex flexDir='column' gap='20px' w='100%' pos='relative'>
                 <Text fontSize='3xl' textAlign={'center'} fontWeight='semibold' mt='20px'>Here are some of our designs!</Text>
                 <IconButton icon={<RiEditFill/>} onClick={()=>handleModal('samples')} color='black' pos='absolute' top='0' right='0' isRound variant='outline'/>
                 <ListBox>
                     {samples.map((sample,id)=>(
-                        <ListItemBox id={sample.id} key={id}>
+                        <ListItemBox key={id}>
                             <Image src={sample.src} w='100%' h='100%' maxH='300px'/>
                         </ListItemBox>
                     ))}

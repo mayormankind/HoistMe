@@ -27,7 +27,7 @@ export default function Footer() {
               <ColorModeSwitcher/>
             </Flex>
         </Flex>
-        <Flex bg='hblue' w='100%' h='100%' p={{lg:'30px 0', base:'30px 10px'}}>
+        <Flex bg='hblue' w='100%' h='100%' p={{lg:'30px 10px', base:'30px 10px'}}>
           <Grid w='100%' maxW='1100px' h='100%' gap={{sm:'50px',base:'30px'}} align='center' mx='auto' color='black' gridTemplateAreas={{sm:`
               "logo . . newsletter"
               "links links links links"
@@ -51,13 +51,13 @@ export default function Footer() {
             </Flex>
             <Flex justify='space-between' w='100%' gridArea={'links'} flexDir={{sm:'row',base:'column'}} gap='30px'>
               <Flex flexDir='column' textAlign='left'>
-                <LinkText path={'/home'} text={'Home'}/>
+                <LinkText path={'/'} text={'Home'}/>
                 <LinkText path={'/about'} text={'About Us'}/>
                 <LinkText path={'/services'} text={'Services'}/>
                 <LinkText path={'#contact'} text={'Contact Us'}/>
               </Flex>
               <Flex flexDir='column' textAlign='left'>
-                <LinkText path={'/home'} text={'Home'}/>
+                <LinkText path={'/'} text={'Home'}/>
                 <LinkText path={'/about'} text={'About Us'}/>
                 <LinkText path={'/services'} text={'Services'}/>
                 <LinkText path={'#contact'} text={'Contact Us'}/>

@@ -6,7 +6,7 @@ import MaxContainer from '../MaxContainer';
 export default function Template1Homepage({ edit, setEdit, handleModal }){
     return(
         <Flex w='100%' h='100vh' flexDir='column' color={'white'} bg={'url(images/bg.png)'} bgPos='center' bgRepeat='no-repeat' bgSize='cover' align='center'>
-            <Flex justify='center' align='center' flexDir='column' h='100%' w='100%' pos='relative' bg={'rgba(0,0,0,0.4)'} top='0'>
+            <Flex justify='center' align='center' flexDir='column' h='100%' w='100%' pos='relative' bg={'rgba(0,0,0,0.4)'} top='0' p='0 10px'>
                 <TemplateHeader1 edit={edit} setEdit={setEdit} handleModal={handleModal}/>
                 <MaxContainer>
                     <Box my='auto' w='100%' maxW='700px' pos='relative'>

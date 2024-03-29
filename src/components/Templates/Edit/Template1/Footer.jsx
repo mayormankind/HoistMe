@@ -1,20 +1,20 @@
 import React from 'react';
 import { Box, Flex, IconButton, Text } from '@chakra-ui/react';
-import { RiMailFill, RiGithubFill, RiTwitterFill, RiYoutubeFill, RiWhatsappFill } from 'react-icons/ri';
+import { RiEditFill, RiInstagramFill, RiMailFill, RiTwitterFill, RiWhatsappFill } from 'react-icons/ri';
 import MaxContainer from '../MaxContainer';
 
 export default function Footer() {
   const Links = [
-    {icon:<RiYoutubeFill/>,link:'http://github/mayormankind.com'},
-    {icon:<RiTwitterFill/>,link:'http://github/mayormankind.com'},
-    {icon:<RiMailFill/>,link:'http://github/mayormankind.com'},
-    {icon:<RiWhatsappFill/>,link:'http://github/mayormankind.com'},
+    {icon:<RiInstagramFill/>,link:'http://instagram.com/prospectTailors'},
+    {icon:<RiTwitterFill/>,link:'http://x.com/prospectTailors'},
+    {icon:<RiMailFill/>,link:'http://gmail.com/prospectTailors'},
+    {icon:<RiWhatsappFill/>,link:'http://gmail.com/prospectTailors'},
   ]
   return (
-    <Flex w='100%' h='100%' color={'white'} flexDir='column' bg='black' align='center'>
+    <Flex w='100%' h='100%' color={'white'} flexDir='column' bg='black' align='center' id='contact'>
         <MaxContainer>
-            <Flex gap='20px' justify='space-between' align='center' w='100%' p='60px 0' h='100%' >
-                <Box flex='0.6'>
+            <Flex gap='20px' justify='space-between' align='center' w='100%' p={{sm:'60px 10px',base:'60px 20px'}} h='100%' flexDir={{sm:'row',base:'column'}} >
+                <Box flex='0.7' pos='relative'>
                     <Text mb='10px' fontWeight={'bold'} color={'white'} w='100%' fontSize='20px' h='100%'>ProspectTailors</Text>
                     <Text>Reaching us is not far from you. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, et suscipit recusandae in laboriosam error earum quod eum numquam quisquam adipisci autem doloribus saepe odit nesciunt debitis.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, et suscipit recusandae in laboriosam error earum quod eum numquam quisquam adipisci autem doloribus saepe odit nesciunt debitis.</Text>
                 </Box>

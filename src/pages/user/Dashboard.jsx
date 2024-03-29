@@ -14,11 +14,11 @@ export default function Dashboard(){
     const [ modal, setModal ] = useState('')
 
     const Templates = [
-        {id:'0',templatecode:'Minimalist',templateImage:'images/11.jpg',link:'/template1'},
-        {id:'1',templatecode:'Photography',templateImage:'images/photography.jpg',link:'/template2'},
-        {id:'2',templatecode:'Business',templateImage:'images/tailor.jpg',link:'/template1'},
-        {id:'4',templatecode:'Developer',templateImage:'images/dev.jpg',link:'/template2'},
-        {id:'3',templatecode:'Designer',templateImage:'images/11.jpg',link:'/template2'},
+        { templatecode:'Minimalist',templateImage:'images/11.jpg',link:'/template1' },
+        { templatecode:'Photography',templateImage:'images/photography.jpg',link:'/template2' },
+        { templatecode:'Business',templateImage:'images/tailor.jpg',link:'/template1' },
+        { templatecode:'Developer',templateImage:'images/dev.jpg',link:'/template2' },
+        { templatecode:'Designer',templateImage:'images/11.jpg',link:'/template2' },
     ]
     return(
         <Box>
@@ -57,7 +57,7 @@ export default function Dashboard(){
                         {/* <Link to={template.link} mx='auto'> */}
                             <Box p='5px' w='400px' h='100%' mx={{sm:'0',base:'auto'}}>
                                 <Box w='100%' h='100%' boxShadow={'0 5px 10px rgba(0,0,0,0.7)'} borderRadius='lg'>
-                                    <Image src={'images/photography.jpg'} borderRadius='lg' w='100%' h='100%' loading="lazy"/>
+                                    <Image src={'images/photography.jpg'} borderRadius='lg' w='100%' h='100%' loading='eager'/>
                                 </Box>
                                 <Text textAlign='center'>Saved draft</Text>
                             </Box>
@@ -67,8 +67,8 @@ export default function Dashboard(){
                 <Flex w='100%' h='100%' flexDir='column' gap='10px'>
                     <Text fontWeight='semibold'>Available HoistMe templates</Text>
                     <Grid w='100%' h={'100%'} flexWrap='wrap' justify={'space-around'} gap='30px' gridTemplateColumns={'repeat(auto-fit, minmax(13rem, 1fr))'} py='30px'>
-                        {Templates.map(template=>(
-                            <Link to={template.link} mx='auto'>
+                        {Templates.map((template,id)=>(
+                            <Link to={template.link} mx='auto' key={id}>
                                 <ListItemBox>
                                     <Image borderRadius='lg' src={template.templateImage} w='100%' h='100%' maxH='300px' loading="lazy"/>
                                     <Text textAlign='center'>{template.templatecode}</Text>
