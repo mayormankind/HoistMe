@@ -26,30 +26,28 @@ export default function Dashboard(){
             <Flex gap='40px' flexDir='column' align='center' w='100%' maxW='1100px' h='100%' m='auto' p='20px'>
                 <Flex w='100%' justify='space-between' flexDir='column' p={{sm:'30px 20px',base:'30px 10px'} 
                 }bg='hblue' pos='relative'>
-                    {/* <Flex w='100%' flexDir='column'> */}
-                        <Flex justify='space-between' align='center' gap='20px'>
-                            <Text fontWeight='semibold'>Welcome back, Mankind243!</Text>
-                            <Avatar boxSize='40px' src='images/photography.jpg'/>
-                        </Flex>
-                        <Flex flexDir='column' mb='20px'>
-                            <Text>Mail: mayowamakinde@gmail.com</Text>
-                            <Button leftIcon={<FaUser/>} w='100%' maxW='200px'>Verify account</Button>
-                        </Flex>
-                        {showSettings && <>
-                            <Divider borderColor='white'/>
-                            <Flex flexDir='column' w='100%' maxW='400px' m='auto' gap='10px' mt='20px'>
-                                <Heading fontSize='lg' textAlign='center'>Account Settings</Heading>
-                                <Flex flexDir='column' p='0 20px' gap='10px'>
-                                    <Button onClick={()=>setModal('policies')} leftIcon={<FaList/>}>Terms and Policy</Button>
-                                    <Button onClick={()=>setModal('faq')} leftIcon={<FaQuestion/>}>FAQs</Button>
-                                    <Button onClick={()=>setModal('changePassword')} leftIcon={<FaUser/>}>Change Password</Button>
-                                    <Button onClick={()=>setModal('deleteAccount')} leftIcon={<FaUser/>}>Delete Account</Button>
-                                    <Button leftIcon={<FaSignOutAlt/>}>Sign Out</Button>
-                                </Flex>
+                    <Flex justify='space-between' align='center' gap='20px'>
+                        <Text fontWeight='semibold' fontSize={{sm:'lg',base:'sm'}}>Welcome back, Mankind243!</Text>
+                        <Avatar boxSize={{sm:'40px',base:'30px'}} src='images/photography.jpg'/>
+                    </Flex>
+                    <Flex flexDir='column' mb='20px' gap='5px'>
+                        <Text fontSize={{sm:'sm',base:'xs'}}> mayowamakinde@gmail.com</Text>
+                        <Button leftIcon={<FaUser/>} w='100%' maxW={{sm:'200px',base:'150px'}} size={'sm'}>Verify account</Button>
+                    </Flex>
+                    {showSettings && <>
+                        <Divider borderColor='white'/>
+                        <Flex flexDir='column' w='100%' maxW='400px' m='auto' gap='10px' mt='20px'>
+                            <Heading fontSize='lg' textAlign='center'>Account Settings</Heading>
+                            <Flex flexDir='column' p='0 20px' gap='10px'>
+                                <Button size={{sm:'md',base:'sm'}} onClick={()=>setModal('policies')} leftIcon={<FaList/>}>Terms and Policy</Button>
+                                <Button size={{sm:'md',base:'sm'}} onClick={()=>setModal('faq')} leftIcon={<FaQuestion/>}>FAQs</Button>
+                                <Button size={{sm:'md',base:'sm'}} onClick={()=>setModal('changePassword')} leftIcon={<FaUser/>}>Change Password</Button>
+                                <Button size={{sm:'md',base:'sm'}} onClick={()=>setModal('deleteAccount')} leftIcon={<FaUser/>}>Delete Account</Button>
+                                <Button leftIcon={<FaSignOutAlt/>}>Sign Out</Button>
                             </Flex>
-                        </>}
-                        <IconButton icon={<RiSettings2Fill/>} variant='ghost' pos='absolute' bottom='0' right='0' onClick={()=>setShow(!showSettings)}/>
-                    {/* </Flex> */}
+                        </Flex>
+                    </>}
+                    <IconButton icon={<RiSettings2Fill/>} variant='unstyled' pos='absolute' bottom='0' right='0' onClick={()=>setShow(!showSettings)}/>
                 </Flex>
                 <Flex w='100%' h='100%' flexDir='column' gap='10px'>
                     <Text fontWeight='semibold'>Most recent edit</Text>

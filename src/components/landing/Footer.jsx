@@ -18,13 +18,10 @@ export default function Footer() {
         <Flex gap='20px' flexDir='column' justify='center' align='center' w='100%' maxW='1100px' p={{lg:'60px 0',sm:'60px 10px', base:'50px 10px'}} h='100%' textAlign='center'>
             <Text fontSize={{sm:'5xl',base:'3xl'}} fontWeight={'bold'} w='100%' h='100%' p={{sm:'0 10px',base:'0 20px'}} maxW='700px'>Something you should want to do.</Text>
             <Text color='gray' fontSize={{sm:'20px', base:'17px'}}>Reaching us is not far from you.</Text>
-            <Flex align='center' justify='space-between' w='100%'>
-              <Flex>
-                {Links.map((acc,id)=>(
-                  <IconButton fontSize='20px' key={id} as='a' icon={acc.icon} href={acc.link} variant={'ghost'} _hover={{transform:'translateY(-5px)'}}/>
+            <Flex mx='auto'>
+              {Links.map((acc,id)=>(
+                <IconButton fontSize='20px' key={id} as='a' icon={acc.icon} href={acc.link} variant={'ghost'} _hover={{transform:'translateY(-5px)'}}/>
                 ))}
-              </Flex>
-              <ColorModeSwitcher/>
             </Flex>
         </Flex>
         <Flex bg='hblue' w='100%' h='100%' p={{lg:'30px 10px', base:'30px 10px'}}>
@@ -36,7 +33,7 @@ export default function Footer() {
             "logo"
             "newsletter"
             "links"`}}>
-            <Box gridArea={'logo'}>
+            <Box gridArea={'logo'} mx={{sm:'0', base:'auto'}}>
               <HeadLogo/>
               <Text as='p' textAlign='left'>Your no-code portfolio builder</Text>
             </Box>
