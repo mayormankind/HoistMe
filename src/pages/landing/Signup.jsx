@@ -88,7 +88,7 @@ export default function Signup(){
                         </InputRightElement>
                     </InputGroup>
                     <Button variant='with-bg'>
-                        <Link to='/dashboard'>Login to Account</Link>
+                        <Link to='/dashboard'>Create your Account</Link>
                     </Button>
                     <Text textAlign='center'>Already have an account? <Button variant='link' color='darkbg'><Link to='/login' color='header.100'>Login</Link></Button></Text>
                 </Flex>
@@ -96,10 +96,3 @@ export default function Signup(){
         </Flex>
     )
 }
-                        // <select defaultValue={'Business type'} style={{height:'50px',padding:'0 15px',borderRadius:'10px',background:'transparent',border:'1px solid gray'}}>
-                        //     <option selected>Business type</option>
-                        //     <option>Driver</option>
-                        //     <option>Fashion designer</option>
-                        //     <option>Web developer</option>
-                        //     <option>Shoe maker</option>
-                        // </select>
